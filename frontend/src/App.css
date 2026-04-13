@@ -1,0 +1,919 @@
+/* Reset */
+.hero {
+  text-align: center;
+  padding: 40px;
+  background: #1a2b6d;
+  color: white;
+}
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background: #f5f5f5;
+}
+.searchDeals {
+  text-align: center;
+  font-size: 18px;
+  color: #aaa5a5;
+  margin-top:2px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar container */
+.nav {
+  height: 64px;
+  background-color: #1a2b5f; /* IndiGo blue */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 48px;
+}
+
+/* Left side */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+/* IndiGo logo text */
+.logo {
+  height: 46px;        /* close to real IndiGo size */
+  width: auto;         /* keep image ratio */
+  margin-right: 24px;
+  cursor: pointer;
+}
+.sign-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 50%;
+  background-color: #f3f4f6;
+  transition: 0.3s;
+}
+
+.sign-btn:hover {
+  background-color: #e5e7eb;
+  transform: scale(1.1);
+}
+
+.logo-sign {
+  width: 30px;
+  height: 30px;
+}
+.user-name{
+  color:white;
+  font-size: medium;
+  text-decoration: underline;
+}
+.success-msg {
+  background-color: #d4edda;
+  color: green;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.success-er {
+  background-color: #d4edda;
+  color: red;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* Navbar links */
+.nav-left a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 4px;
+}
+
+/* Hover effect like IndiGo */
+.nav-left a:hover {
+  border-bottom: 2px solid white;
+}
+
+/* Right side */
+.nav-right {
+  display: flex;
+  gap:15px;
+  align-items: center;
+}
+
+/* Login button */
+.login-btn {
+  background-color: white;
+  color: #1a2b5f;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #f2f2f2;
+}
+/* //footer page css */
+
+/* Footer */
+.footer {
+  background-color: #1a2b5f; /* IndiGo blue */
+  color: white;
+  padding: 40px 60px 20px;
+  margin-top: 40px;
+  
+  
+
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-col h4 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.footer-col p {
+  font-size: 14px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.footer-col p:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* Bottom copyright */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 30px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+
+/* search-form */
+/* Search section background */
+.search-container {
+  background: linear-gradient(180deg, #1a2b5f 60%, #f5f7fa 40%);
+  padding: 60px 0 80px;
+}
+
+/* Heading */
+.search-container h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+/* Search card */
+.search-form {
+  background-color: white;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 18px;
+  padding: 28px;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  align-items: center;
+}
+
+/* Input fields */
+.inpt {
+  flex: 1;
+  height: 52px;
+  padding: 0 14px;
+  font-size: 15px;
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+}
+
+.inpt:focus {
+  outline: none;
+  border-color: #1a2b5f;
+  box-shadow: 0 0 0 1px #1a2b5f;
+}
+
+/* Search button */
+.search-btn {
+  background-color: #ff6600; /* IndiGo orange */
+  color: white;
+  height: 52px;
+  padding: 0 32px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #e65c00;
+}/* Flight card wrapper */
+.flight-card {
+  padding: 60px 0;
+  background-color: #f5f7fa;
+}
+
+/* Title */
+.flight-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 24px;
+  color: #1a2b5f;
+}
+
+/* Card box */
+.card {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 28px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Field */
+.field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.field label {
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+/* Inputs & select */
+.field select,
+.field input {
+  height: 46px;
+  padding: 0 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.field select:focus,
+.field input:focus {
+  outline: none;
+  border-color: #1a2b5f;
+}
+
+/* Button */
+.flight-btn {
+  height: 46px;
+  padding: 0 28px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.flight-btn:hover {
+  background-color: #e65c00;
+}
+
+
+/* flight-card csss */
+.card-details{
+  display:flex;
+  flex-wrap: wrap;
+  gap:20px;
+
+  flex-direction: flex-start;
+  
+}
+/* login page
+ */
+ /* Full page center */
+.login {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #4e73df, #1cc88a);
+}
+
+/* Login Box */
+.login-div {
+  width: 350px;
+  padding: 40px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+}
+
+/* Heading */
+.login-div h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Input Fields */
+.login-div input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.login-div input:focus {
+  border-color: #4e73df;
+  box-shadow: 0 0 5px rgba(78, 115, 223, 0.5);
+}
+
+/* Button */
+.login-div button {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #4e73df;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-div button:hover {
+  background-color: #2e59d9;
+}
+
+/* passenger */
+.passenger {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: linear-gradient(135deg, #36d1dc, #5b86e5);
+}
+
+.passenger input ,select {
+  width: 300px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.passenger input,select:focus {
+  border-color: #5b86e5;
+  box-shadow: 0 0 5px rgba(91, 134, 229, 0.5);
+}
+
+.passenger button {
+  width: 320px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #2e59d9;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.passenger button:hover {
+  background-color: #1b3fa0;
+}
+/* payment */
+.payment {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ff9966, #ff5e62);
+}
+
+.payment-box {
+  width: 350px;
+  padding: 40px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+}
+
+.payment-box input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.payment-box input:focus {
+  border-color: #ff5e62;
+  box-shadow: 0 0 5px rgba(255, 94, 98, 0.5);
+}
+
+.payment-box button {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #ff5e62;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.payment-box button:hover {
+  background-color: #e0484d;
+}
+
+
+
+.flight-details-card {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 25px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+.flight-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flight-route {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.book-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff6d38;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.book-btn:hover {
+  background-color: #e85c29;
+}
+
+.flight-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  margin: 15px auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.flight-left {
+  text-align: center;
+}
+
+.airline-logo {
+  width: 60px;
+}
+
+.flight-middle {
+  display: flex;
+  gap: 50px;
+  text-align: center;
+}
+
+.flight-right {
+  text-align: right;
+}
+
+button {
+  background: #ff6d38;
+  border: none;
+  padding: 8px 15px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+/* /confirm page */
+.confirm-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #eef2f3, #dfe9f3);
+}
+
+.confirm-card {
+  width: 420px;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.success-icon {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+.confirm-title {
+  color: #28a745;
+  margin-bottom: 10px;
+}
+
+.booking-id {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.confirm-details {
+  text-align: left;
+  margin-top: 15px;
+}
+
+.confirm-details p {
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+.confirm-details span {
+  font-weight: 600;
+  color: #333;
+}
+
+.status-badge {
+  margin-top: 18px;
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: #007bff;
+  color: white;
+  font-size: 13px;
+}
+
+.home-btn {
+  margin-top: 25px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #007bff;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.home-btn:hover {
+  background: #0056b3;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 200px;
+  font-size: 20px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* booking page css */
+/* Booking Page Container */
+.booking-container {
+  max-width: 450px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Heading */
+.booking-container h2 {
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+/* Route text */
+.booking-container p {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Labels */
+.booking-container label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Inputs */
+.booking-container input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.booking-container input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Total Price */
+.booking-container h3 {
+  margin-top: 20px;
+  color: #27ae60;
+}
+
+/* Button */
+.booking-container button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.booking-container button:hover {
+  background: linear-gradient(135deg, #0056b3, #003f7f);
+  transform: scale(1.03);
+}
+
+.booking-container button:active {
+  transform: scale(0.98);
+}
+/* payment page css */
+/* Payment Page */
+.payment-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background: #f4f7fb;
+}
+
+.payment-card {
+  width: 400px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.payment-card h2 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.amount {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.payment-card input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.payment-card input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.payment-card button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.payment-card button:hover {
+  transform: scale(1.03);
+}
+
+.error-text {
+  color: red;
+  font-size: 13px;
+  margin-top: 5px;
+}
+/* flight details page */
+/* Full Page Center */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, #e3f2fd, #f5f5f5);
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Card */
+.flight-details-card {
+  max-width: 750px;
+  margin: 50px auto;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.flight-details-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Header Section */
+.flight-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px dashed #e0e0e0;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.flight-header img {
+  border-radius: 8px;
+}
+
+.flight-header h3 {
+  margin: 5px 0 0 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.flight-header h2 {
+  color: #1976d2;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* Route Section */
+.flight-route {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 25px 0;
+}
+
+.flight-route h3 {
+  margin: 5px 0;
+  font-size: 22px;
+  color: #212121;
+}
+
+.flight-route p {
+  margin: 3px 0;
+  color: #616161;
+}
+
+/* Cabin & Extra Info */
+.flight-details-card p {
+  margin: 8px 0;
+  font-size: 15px;
+  color: #424242;
+}
+
+/* Refundable Badge */
+.flight-details-card p:last-of-type {
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+/* Book Button */
+.book-btn {
+  width: 100%;
+  padding: 12px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+}
+
+.book-btn:hover {
+  background: #0d47a1;
+  transform: scale(1.03);
+}
+@media (max-width: 600px) {
+  .flight-route {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .flight-header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
