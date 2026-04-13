@@ -1,6 +1,7 @@
+
 # Flight Booking Website
 
-A full-stack flight booking web application built with the MERN stack. This project allows users to search flights, book tickets, make payments, and manage their bookings.
+A full-stack flight booking web application built with the MERN stack. This project allows users to browse flights, view details, and book tickets through a simple and user-friendly interface.
 
 ---
 
@@ -8,21 +9,17 @@ A full-stack flight booking web application built with the MERN stack. This proj
 
 ### User Features
 
-* User registration and login
-* Secure authentication with JWT
-* Search available flights
+* Browse available flights
 * View flight details
-* Book tickets
-* Razorpay payment integration
-* View booking history
-* Responsive UI
+* Book flight tickets
+* Simple payment flow
+* Responsive user interface
 
-### Admin Features
+### Project Highlights
 
-* Add flights
-* Update flight details
-* Delete flights
-* Manage bookings
+* Clean frontend UI
+* REST API integration
+* MongoDB data storage
 
 ---
 
@@ -135,11 +132,11 @@ npm run dev
 
 ## Future Improvements
 
-* Email notifications
-* Seat selection
-* Ticket PDF download
-* Admin dashboard analytics
+* User authentication
+* Booking history
 * Flight filters
+* Better payment confirmation flow
+* Mobile UI improvements
 
 ---
 
